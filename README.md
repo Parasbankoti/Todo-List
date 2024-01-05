@@ -1,5 +1,4 @@
-![cover](./todo.jpg)
-<center> View Demo <a href="https://react-todo-ap.netlify.app/" target="_blank">ToDo React App</a> </center>
+View Demo : <a href="https://paras-todolist.netlify.app/" target="_blank" >ToDo React App</a> 
 
 ## 🦉 Main information
 

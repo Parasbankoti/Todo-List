@@ -293,6 +293,7 @@ Grocery List
   transition: var(--transition);
   margin-top: 1.5rem;
   background-color: red;
+  border-radius: 8px;
 }
 .clear-btn:hover {
   color: var(--clr-white);

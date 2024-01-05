@@ -23,8 +23,7 @@ function App() {
     e.preventDefault(); // the preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. // clicking on a "Submit" button, prevent it from submitting a form
     //  console.log('hello');
 
-    if (name && isEditing) {
-      // check if there's something in the value and if the editing is true
+    if (name.trim().length && isEditing) {
       setList(
         list.map((item) => {
           // we have our list and we're iterating over it
@@ -38,7 +37,7 @@ function App() {
       setName("");
       setEditID(null);
       setIsEditing(false);
-    } else {
+    } else if (name.trim().length) {
       const newItem = {
         id: new Date().getTime().toString(),
         title: name,
@@ -57,7 +56,6 @@ function App() {
   };
 
   const editItem = (id) => {
-    // get a specific item whose Id matches
     const specificItem = list.find((item) => item.id === id); // if the item Id matches, then return that item
     setIsEditing(true);
     setEditID(id);
@@ -95,7 +93,7 @@ function App() {
             <div className="todo-container">
               <ToDo items={list} removeItem={removeItem} editItem={editItem} />{" "}
               <button className="clear-btn" onClick={clearList}>
-                clear All
+                Clear All
               </button>
             </div>
           )}

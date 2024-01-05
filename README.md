@@ -1,4 +1,4 @@
-<center> View Demo <a href="https://paras-todolist.netlify.app/" target="_blank">ToDo React App</a> </center>
+<center> View Demo : <a href="https://paras-todolist.netlify.app/" target="_blank">ToDo React App</a> </center>
 
 ## 🦉 Main information
 

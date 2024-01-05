@@ -20,16 +20,13 @@ function App() {
   const [editID, setEditID] = useState(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // the preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. // clicking on a "Submit" button, prevent it from submitting a form
-    //  console.log('hello');
+    e.preventDefault();
 
     if (name.trim().length && isEditing) {
       setList(
         list.map((item) => {
-          // we have our list and we're iterating over it
           if (item.id === editID) {
-            // if the item Id matches to whatever we have in a state, the return all the propreties
-            return { ...item, title: name }; // return Id and change the title to whatever is the state
+            return { ...item, title: name };
           }
           return item;
         })
@@ -42,7 +39,7 @@ function App() {
         id: new Date().getTime().toString(),
         title: name,
       };
-      setList([...list, newItem]); // ... get me the previous values from the state add add a new one
+      setList([...list, newItem]);
       setName("");
     }
   };
@@ -69,6 +66,8 @@ function App() {
   return (
     <>
       <div>
+        <h2 className="heading">Just Do It</h2>
+
         <section className="section-center">
           <form className="todo-form" onSubmit={handleSubmit}>
             {/* {alert.show && (
@@ -85,7 +84,7 @@ function App() {
               />
 
               <button type="submit" className="submit-btn">
-                {isEditing ? "edit" : "Add"}{" "}
+                {isEditing ? "Edit" : "Add"}{" "}
               </button>
             </div>
           </form>

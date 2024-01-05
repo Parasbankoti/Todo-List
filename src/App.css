@@ -1,11 +1,4 @@
-/*
-=============== 
-Variables
-===============
-*/
-
 :root {
-  /* dark shades of primary color*/
   --main-yellow: #ffc727;
   --dark-yellow: #f4ae00;
   --main-red: red;
@@ -24,11 +17,6 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
 
 *,
 ::after,
@@ -39,8 +27,6 @@ Global Styles
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--main-yellow);
-  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
   background: rgb(9, 101, 121);
@@ -49,6 +35,12 @@ body {
     rgba(9, 101, 121, 1) 24%,
     rgba(13, 166, 198, 1) 83%
   );
+}
+.heading {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul {
   list-style-type: none;
@@ -134,7 +126,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 35rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 main {
@@ -154,6 +146,7 @@ Grocery List
   transition: var(--transition);
   padding: 3rem 1rem;
   box-shadow: var(--dark-shadow);
+  margin-bottom: 20px;
 }
 
 .alert {
@@ -225,7 +218,7 @@ Grocery List
 
 .todo-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   transition: var(--transition);
@@ -243,9 +236,11 @@ Grocery List
 }
 .title {
   margin-bottom: 0;
-  color: var(--clr-grey-1);
+  color: black;
   letter-spacing: 2px;
   transition: var(--transition);
+  height: 20px;
+  display: flex;
 }
 
 .title-center {
@@ -292,7 +287,7 @@ Grocery List
   cursor: pointer;
   transition: var(--transition);
   margin-top: 1.5rem;
-  background-color: red;
+  background-color: rgba(230, 16, 16, 0.844);
   border-radius: 8px;
 }
 .clear-btn:hover {

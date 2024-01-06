@@ -66,7 +66,7 @@ function App() {
   return (
     <>
       <div>
-        <h2 className="heading">Just Do It</h2>
+        <h2 className="heading">Just Do It...</h2>
 
         <section className="section-center">
           <form className="todo-form" onSubmit={handleSubmit}>

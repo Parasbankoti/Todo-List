@@ -37,7 +37,7 @@ body {
   );
 }
 .heading {
-  margin: 5px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,8 +175,8 @@ Grocery List
 }
 .todo {
   padding: 0.5rem 1rem;
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
   font-size: 1.2rem;
   flex: 1 0 auto;
   outline: #222;
@@ -199,13 +199,14 @@ Grocery List
   flex: 0 0 5rem;
   display: grid;
   align-items: center;
-  border-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   padding: 0.25rem;
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: bold;
-  margin-left: 3px;
   background-color: white;
+  outline: none;
 }
 .submit-btn:hover {
   background: rgba(0, 204, 0, 0.963);
